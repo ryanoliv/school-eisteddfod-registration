@@ -1,0 +1,232 @@
+:root {
+  --font-roboto: "Roboto", sans-serif;
+  --font-opensans: "Open Sans", sans-serif;
+
+  --font-size-xl: 3rem;
+  --font-size-lg: 1.875rem;
+  --font-size-md: 1.125rem;
+  --font-size-base: 1rem;
+  --font-size-sm: 0.875rem;
+  --font-size-xs: 0.75rem;
+
+  --color-blue-dark: #101c3d;
+  --color-blue-base: #152550;
+  --color-blue-light: #1e3061;
+
+  --color-gold-dark: #9e8a4d;
+  --color-gold-base: #b09c5f;
+  --color-gold-light: #bfaa67;
+
+  --color-gray-dark: #81848a;
+  --color-gray-light: #b6b9c2;
+
+  --color-white-dark: #f0f4ff;
+  --color-white-base: #f5f8ff;
+  --color-white-light: #fff;
+}
+
+body {
+  background-color: var(--color-white-base);
+  color: var(--color-blue-dark);
+  font-family: var(--font-opensans);
+}
+
+.h1,
+.h2,
+.h3 {
+  font-family: var(--font-roboto);
+}
+
+.h1 {
+  font-size: var(--font-size-xl);
+  line-height: 1.5;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.p {
+  font-family: var(--font-opensans);
+  line-height: 1.6;
+}
+
+.container {
+  padding: 2.75em 2em;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.85em 1.68em;
+  border-radius: 35px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background-color: var(--color-blue-dark);
+  color: var(--color-white-base);
+}
+
+.btn.primary:hover {
+  color: var(--color-blue-dark);
+  background-color: var(--color-white-base);
+}
+
+.btn.secondary {
+  background-color: transparent;
+  color: var(--color-blue-dark);
+  border: 1px solid var(--color-blue-dark);
+}
+
+.btn.secondary:hover {
+  background-color: var(--color-blue-dark);
+  color: var(--color-white-base);
+}
+
+.btn.primary,
+.btn.secondary {
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--color-blue-dark);
+}
+
+/* HEADER */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  flex: 1;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 2;
+  text-transform: uppercase;
+}
+
+.nav > .ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  font-weight: 500;
+}
+
+.cta-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}
+
+/* HERO */
+.hero-section {
+  min-height: 100vh;
+  padding-top: 143px; /* Header height */
+}
+
+.hero-content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 565px;
+}
+
+.hero-content-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-content-span {
+  font-size: var(--font-size-md);
+  color: var(--color-gray-dark);
+}
+
+.hero-content-dates {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.hero-content-dates > * {
+  font-weight: 700;
+}
+
+.hero-content-dates .date {
+  text-decoration: underline;
+}
+
+.hero-content-cta {
+  padding-top: 1rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.hero-content-carousel {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 24px;
+}
+
+.carousel {
+  display: flex;
+  width: 300%; /* Assuming 3 images */
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+  width: 600px;
+  height: 650px;
+  object-fit: cover;
+  border-radius: 24px;
+  border: 1px solid var(--color-gray-light);
+  flex-shrink: 0;
+}
+
+/* Indicator dots container */
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Style for each dot */
+.carousel-indicators .dot {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Active dot style */
+.carousel-indicators .dot.active {
+  background-color: white;
+}
