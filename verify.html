@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/verify.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div id="header-container"></div>
+
+    <!-- HERO -->
+    <section class="verify-section">
+      <div class="container">
+        <div class="verify-container">
+          <div class="verify-form-container">
+            <div class="verify-form-title-container">
+              <h2>OTP Verification Code</h2>
+              <p class="p">Code has been sent to ****art@gmail.com</p>
+            </div>
+
+            <form action="#" class="verify-form">
+              <div class="otp-container">
+                <input type="text" class="otp-input" maxlength="1" required />
+                <input type="text" class="otp-input" maxlength="1" required />
+                <input type="text" class="otp-input" maxlength="1" required />
+                <input type="text" class="otp-input" maxlength="1" required />
+                <input type="text" class="otp-input" maxlength="1" required />
+                <input type="text" class="otp-input" maxlength="1" required />
+              </div>
+              <div class="verify-form-button-container">
+                <button type="submit" class="btn primary">Verify Code</button>
+
+                <button type="button" class="btn secondary">
+                  Send New Code
+                </button>
+              </div>
+            </form>
+
+            <p class="verify-code-expiry">Code expires in <span>1:00</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div id="footer-container"></div>
+
+    <!-- SCRIPTS -->
+    <script src="js/components.js"></script>
+    <script src="js/otp.js"></script>
+  </body>
+</html>
