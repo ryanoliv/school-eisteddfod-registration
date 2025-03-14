@@ -162,3 +162,24 @@ input:checked + .slider:before {
 .register-login-text > a {
   text-decoration: underline;
 }
+
+@media (max-width: 1050px) {
+  .register-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 650px) {
+  .register-container {
+    flex-direction: column;
+  }
+
+  .register-form-container {
+    padding: 3rem 2rem;
+    width: 100%;
+  }
+
+  .register-form-input-container > input {
+    min-width: 100%;
+  }
+}
