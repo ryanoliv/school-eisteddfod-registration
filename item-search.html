@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/item-search.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div id="header-container"></div>
+
+    <!-- HERO SECTION -->
+    <section class="item-search-section">
+      <div class="container">
+        <h1 class="h1">Select Your Competition Entries</h1>
+        <p class="p">
+          Search for a category or browse through the disciplines below. You can
+          enter multiple categories and subcategories.
+        </p>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search for a category or item (e.g., 'Tap Solo', 'Violin Solo', 'Painting')"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORIES SECTION -->
+    <section class="categories-section">
+      <div class="container">
+        <h2 class="h2">Browse by Category</h2>
+        <div class="categories-grid">
+          <a href="#" class="category-card">
+            <div class="category-card-modal"></div>
+            <img src="/images/speechdrama.jpg" alt="Speech & Drama" />
+            <span>Speech & Drama</span>
+          </a>
+          <a href="#" class="category-card">
+            <div class="category-card-modal"></div>
+            <img src="/images/music.jpg" alt="Instrumental & Vocal Music" />
+            <span>Instrumental & Vocal Music</span>
+          </a>
+          <a href="#" class="category-card">
+            <div class="category-card-modal"></div>
+            <img src="/images/art.jpg" alt="Visual Art & Design" />
+            <span>Visual Art & Design</span>
+          </a>
+          <a href="#" class="category-card">
+            <div class="category-card-modal"></div>
+            <img src="/images/dance.jpg" alt="Dance" />
+            <span>Dance</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div id="footer-container"></div>
+
+    <!-- SCRIPTS -->
+    <script src="js/components.js"></script>
+  </body>
+</html>
