@@ -27,6 +27,8 @@
   gap: var(--gap-base);
   width: 100%;
   min-width: 500px;
+  max-width: 750px;
+  padding-inline: 2rem;
 }
 
 /* Step Circle */
@@ -316,6 +318,7 @@
   .progress-container {
     min-width: unset;
     gap: 0;
+    padding-left: 1;
   }
 
   .profile-container {
