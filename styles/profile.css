@@ -1,0 +1,363 @@
+.profile-section {
+  min-height: 100vh;
+  padding-top: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  gap: var(--gap-lg);
+}
+
+.profile-main-container {
+  padding-inline: 4rem;
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+.profile-container {
+  display: flex;
+  gap: var(--gap-lg);
+  padding-inline: 4rem;
+  max-width: 1440px;
+  /* margin-inline: auto; */
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-base);
+  width: 100%;
+  min-width: 500px;
+}
+
+/* Step Circle */
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--gap-sm);
+}
+
+.step-number {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-white-light);
+  background-color: var(--color-blue-dark);
+  opacity: 0.2;
+}
+
+/* Active Step */
+.step.active .step-number {
+  background-color: var(--color-blue-dark);
+  opacity: 1;
+}
+
+.step.complete .step-number {
+  background-color: var(--color-gold-base);
+  background-image: url("/images/icons/tick.svg");
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0; /* Hide number text */
+  opacity: 1;
+}
+
+/* Progress Line */
+.progress-line {
+  flex: 1;
+  height: 2px;
+  background-color: var(--color-gray-light);
+  border-radius: 4px;
+}
+
+/* Step Text */
+.step-text {
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  opacity: 0.2;
+}
+
+/* Active Step Text */
+.step.active .step-text {
+  color: var(--color-blue-dark);
+  opacity: 1;
+}
+
+.step.complete .step-text {
+  opacity: 1;
+}
+
+.profile-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-lg);
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-base);
+  max-width: 500px;
+}
+
+.profile-form-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-sm);
+}
+
+.profile-form-input-container > input {
+  border: 1px solid var(--color-gray-light);
+  padding: 1rem;
+  border-radius: 50px;
+  min-width: 100%;
+}
+
+.profile-form-input-container > input::placeholder {
+  color: var(--color-gray-light);
+}
+
+.profile-form-input-container > select {
+  border: 1px solid var(--color-gray-light);
+  padding: 1rem;
+  border-radius: 50px;
+  width: 100%;
+  background-color: var(--color-white-light);
+  color: var(--color-blue-dark);
+  font-size: var(--font-size-base);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 2.5rem;
+  cursor: pointer;
+}
+
+/* Wrap Select Inside a Div */
+.select-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Style the Select Element */
+.select-wrapper select {
+  border: 1px solid var(--color-gray-light);
+  padding: 1rem;
+  border-radius: 50px;
+  width: 100%;
+  min-width: 200px;
+  background-color: var(--color-white-light);
+  color: var(--color-blue-dark);
+  font-size: var(--font-size-base);
+  appearance: none; /* Remove default styles */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 2.5rem; /* Space for dropdown arrow */
+  cursor: pointer;
+}
+
+/* Custom Dropdown Arrow */
+.select-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  right: 1.5rem; /* Adjust arrow position */
+  width: 16px; /* Adjust size as needed */
+  height: 16px;
+  background-image: url("/images/icons/caret-down.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+/* Focus & Hover Effects */
+.select-wrapper select:focus {
+  outline: none;
+  border-color: var(--color-blue-dark);
+}
+
+.select-wrapper select:hover {
+  border-color: var(--color-gold-base);
+}
+
+.profile-form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-image-upload-container {
+  background-color: var(--color-blue-dark);
+  padding-inline: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white-light);
+  border-top-left-radius: var(--border-radius-base);
+  border-bottom-left-radius: var(--border-radius-base);
+}
+
+.profile-image-upload-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-lg);
+}
+
+.profile-image-upload-content > p {
+  font-size: var(--font-size-sm);
+  font-style: italic;
+  max-width: 365px;
+}
+
+.profile-image-upload-image-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-md);
+}
+
+.profile-image-upload-image-container > h2 {
+  font-size: var(--font-size-base);
+}
+
+.btn.secondary.white {
+  border: 1px solid var(--color-white-light);
+  color: var(--color-white-light);
+}
+
+.profile-image-container {
+  border: 1px solid var(--color-white-light);
+  width: 350px;
+  height: 400px;
+  background-color: var(--color-blue-light);
+  border-radius: var(--border-radius-base);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-form-legal-container {
+  display: flex;
+  gap: var(--gap-sm);
+  font-size: var(--font-size-sm);
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  display: none; /* Hidden by default */
+  position: fixed;
+  padding-inline: 1rem;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Darkened background */
+  z-index: 999; /* Below modal but above everything else */
+}
+
+/* Show overlay when active */
+.modal-overlay.active,
+.modal.active {
+  display: flex;
+}
+
+.modal.active + .modal-overlay {
+  display: block;
+}
+
+.modal-overlay.active > *,
+.modal.active > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-md);
+  text-align: center;
+}
+
+/* Ensure modals appear on top of the overlay */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  max-width: 500px;
+}
+
+@media (max-width: 1180px) {
+  .profile-section {
+    flex-direction: column;
+    gap: var(--gap-xl);
+  }
+
+  .profile-container {
+    /* max-width: unset; */
+    justify-content: center;
+  }
+
+  .profile-image-upload-container {
+    padding-block: 4rem;
+    border-top-left-radius: unset;
+    border-bottom-left-radius: unset;
+  }
+}
+
+@media (max-width: 550px) {
+  .progress-container {
+    min-width: unset;
+    gap: 0;
+  }
+
+  .profile-container {
+    padding-inline: 1rem;
+  }
+
+  .step-number {
+    width: 25px;
+    height: 25px;
+    font-size: var(--font-size-xs);
+  }
+
+  .step-text {
+    font-size: 10px;
+  }
+
+  .profile-image-upload-container {
+    padding-inline: 1rem;
+  }
+
+  .modal {
+    padding: 2rem 1rem;
+    width: 80%;
+  }
+}
+
+@media (max-width: 450px) {
+  .progress-container {
+    flex-direction: column;
+    gap: var(--gap-base);
+  }
+
+  .profile-form-row {
+    gap: var(--gap-sm);
+  }
+
+  .select-wrapper select {
+    min-width: unset;
+  }
+
+  .profile-image-container {
+    width: 320px;
+    height: 380px;
+  }
+}
