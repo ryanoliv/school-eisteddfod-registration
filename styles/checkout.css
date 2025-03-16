@@ -1,0 +1,258 @@
+.checkout-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+.checkout-container {
+  display: flex;
+  width: 100%;
+  max-width: 1100px;
+  gap: 3rem;
+}
+
+/* LEFT SECTION */
+.checkout-details {
+  flex: 1;
+}
+
+/* FORM STYLING */
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.checkout-form-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.checkout-form-input-container input {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--color-gray-light);
+  border-radius: 50px;
+}
+
+.add-contact {
+  color: var(--color-blue-dark);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* RIGHT SECTION - ORDER SUMMARY */
+.order-summary {
+  flex: 1;
+  background-color: var(--color-blue-dark);
+  color: var(--color-white-light);
+  padding: 2rem;
+  border-radius: var(--border-radius-base);
+}
+
+.order-summary h2 {
+  margin-bottom: 1rem;
+}
+
+.order-items {
+  margin-bottom: 1rem;
+}
+
+.order-item {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.order-item-image {
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-gray-light);
+  border-radius: var(--border-radius-sm);
+}
+
+.order-item-details {
+  flex: 1;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.contestant-total {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: var(--color-white-light);
+  margin: 1rem 0;
+}
+
+.total-label {
+  font-weight: bold;
+}
+
+.total-price {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.terms-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.btn.primary {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 50px;
+  background-color: var(--color-white-light);
+  color: var(--color-blue-dark);
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.payment-note {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin-top: 1rem;
+}
+
+.order-summary-container {
+  background-color: var(--color-blue-dark);
+  padding-inline: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white-light);
+  border-top-left-radius: var(--border-radius-base);
+  border-bottom-left-radius: var(--border-radius-base);
+}
+
+/* Title Styling */
+.order-summary-container h2 {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+/* Order Item */
+.order-item {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.order-item-image {
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-gray-light);
+  border-radius: var(--border-radius-sm);
+}
+
+.order-item-details {
+  flex: 1;
+}
+
+.entry-title {
+  font-weight: bold;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.contestant-total {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 0.5rem;
+}
+
+/* Divider */
+hr {
+  border: none;
+  height: 1px;
+  background-color: var(--color-white-light);
+  margin: 1rem 0;
+}
+
+/* Total Section */
+.total-container {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin: 1rem 0;
+}
+
+.total-label {
+  font-weight: bold;
+}
+
+.total-price {
+  font-weight: bold;
+}
+
+/* Terms & Agreement */
+.terms-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+}
+
+.terms-container input {
+  transform: scale(1.2);
+}
+
+/* Payment Button */
+.btn.primary {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 50px;
+  background-color: var(--color-white-light);
+  color: var(--color-blue-dark);
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+/* Payment Note */
+.payment-note {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin-top: 1rem;
+}
+
+@media (max-width: 1180px) {
+  .order-summary-container {
+    padding-block: 4rem;
+    border-top-left-radius: unset;
+    border-bottom-left-radius: unset;
+  }
+
+  .order-summary-content {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 550px) {
+  .order-summary-container {
+    padding-block: 4rem;
+    padding-inline: 1rem;
+  }
+}

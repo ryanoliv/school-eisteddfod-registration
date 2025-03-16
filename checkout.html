@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/profile.css" />
+    <link rel="stylesheet" href="/styles/register.css" />
+    <link rel="stylesheet" href="/styles/checkout.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div id="header-container"></div>
+
+    <!-- HERO -->
+    <section class="profile-section">
+      <div class="profile-container">
+        <div class="profile-form-container">
+          <div class="progress-container">
+            <div class="step complete">
+              <div class="step-number">1</div>
+              <p class="step-text">Create profile</p>
+            </div>
+            <div class="progress-line"></div>
+            <div class="step complete">
+              <div class="step-number">2</div>
+              <p class="step-text">Select Items</p>
+            </div>
+            <div class="progress-line"></div>
+            <div class="step complete">
+              <div class="step-number">3</div>
+              <p class="step-text">Review Entries</p>
+            </div>
+            <div class="progress-line"></div>
+            <div class="step">
+              <div class="step-number">4</div>
+              <p class="step-text">Make Payment</p>
+            </div>
+          </div>
+          <h1 class="h1 border-b">Checkout</h1>
+          <h2 class="h2">Your Details</h2>
+          <form class="profile-form">
+            <div class="profile-form-input-container">
+              <label for="first-names">Full Name</label>
+              <input
+                type="text"
+                id="first-names"
+                name="first-names"
+                placeholder="Jane Doe"
+                required
+              />
+            </div>
+            <div
+              class="register-form-input-container"
+              id="mobile-input-container"
+            >
+              <label for="mobile">Mobile Number*</label>
+              <div class="phone-input-wrapper">
+                <select id="country-code">
+                  <option value="+27">🇿🇦 +27</option>
+                  <option value="+1">🇺🇸 +1</option>
+                  <option value="+44">🇬🇧 +44</option>
+                </select>
+                <input
+                  type="tel"
+                  id="mobile"
+                  class="phone-input"
+                  placeholder="0821234567"
+                />
+              </div>
+            </div>
+            <div
+              class="register-form-input-container"
+              id="email-input-container"
+            >
+              <label for="email">Email*</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="johndoe@gmail.com"
+                required
+              />
+            </div>
+
+            <button class="btn secondary unstyled">+ Add New Contact</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- <div class="profile-image-upload-container">
+        <div class="profile-image-upload-content">
+          <div class="profile-image-upload-image-container">
+            <h2>Profile Picture</h2>
+            <div class="profile-image-container">
+              <img
+                src="/images/logos/reddam-house-crest.png"
+                alt="reddam house crest"
+              />
+            </div>
+          </div>
+          <button class="btn secondary white">Add Picture</button>
+          <p>
+            Each contestant must upload a profile picture. This should be a head
+            and shoulders shot, with full school uniform. Selfies, or pictures
+            in plain clothes will now be accepted.
+          </p>
+        </div>
+      </div> -->
+      <div class="order-summary-container">
+        <div class="order-summary-content">
+          <h2>Order Summary</h2>
+
+          <!-- Order Item -->
+          <div class="order-item">
+            <div class="order-item-image"></div>
+            <div class="order-item-details">
+              <p class="contestant-name">Contestant: [Name]</p>
+              <p class="entry-title">M11 - Tap Solo (Intermediate)</p>
+              <p class="price">$55.00</p>
+            </div>
+          </div>
+          <p class="contestant-total">Contestant Total: $55.00</p>
+
+          <hr />
+
+          <!-- Order Item -->
+          <div class="order-item">
+            <div class="order-item-image"></div>
+            <div class="order-item-details">
+              <p class="contestant-name">Contestant: [Name]</p>
+              <p class="entry-title">M11 - Tap Solo (Intermediate)</p>
+              <p class="price">$55.00</p>
+            </div>
+          </div>
+          <p class="contestant-total">Contestant Total: $55.00</p>
+
+          <hr />
+
+          <div class="total-container">
+            <p class="total-label">Total</p>
+            <p class="total-price">$55.00</p>
+          </div>
+
+          <div class="terms-container">
+            <input type="checkbox" id="terms" />
+            <label for="terms">By proceeding you agree to our terms</label>
+          </div>
+
+          <button class="btn primary">Proceed to Payment</button>
+
+          <p class="payment-note">
+            You will be redirected to PayFast, our secure payment processor, to
+            complete your transaction. Once your payment is successful, you will
+            be returned to this site to review your order.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div id="footer-container"></div>
+
+    <!-- SCRIPTS -->
+    <script src="js/components.js"></script>
+  </body>
+</html>

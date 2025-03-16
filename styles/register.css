@@ -147,7 +147,6 @@ input:checked + .slider:before {
   gap: var(--gap-sm);
 }
 
-/* Wrapper to ensure consistent spacing */
 .phone-input-wrapper {
   position: relative;
   display: flex;
@@ -155,17 +154,14 @@ input:checked + .slider:before {
   width: 100%;
 }
 
-/* Style the phone input */
 .phone-input {
   width: 100%;
   padding: 1rem 1rem 1rem 5rem !important;
-  /* border: 1px solid var(--color-gray-light) !important; */
 }
 
-/* Style the country select dropdown */
 .phone-input-wrapper select {
   position: absolute;
-  left: 10px; /* Adjust for spacing */
+  left: 10px;
   top: 50%;
   transform: translateY(-50%);
   border: none;
@@ -176,14 +172,12 @@ input:checked + .slider:before {
   outline: none;
   cursor: pointer;
 
-  /* Add custom dropdown arrow */
-  background-image: url("/images/icons/caret-down.svg"); /* Replace with your actual path */
+  background-image: url("/images/icons/caret-down.svg");
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-size: 10px;
 }
 
-/* Hide default arrow for select */
 .phone-input-wrapper select::-ms-expand {
   display: none;
 }
