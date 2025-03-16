@@ -47,7 +47,7 @@
                     <p class="p">A solo tap dance performance for intermediate-level competitors.</p>
                     <p class="price">$55</p>
                 </div>
-                <button class="btn">Add To Selection</button>
+                <button class="btn add-to-cart">Add To Selection</button>
             </div>
             <div class="product-card">
                 <div class="product-card-content">
@@ -55,7 +55,7 @@
                     <p class="p">A solo tap dance performance for intermediate-level competitors.</p>
                     <p class="price">$55</p>
                 </div>
-                <button class="btn">Add To Selection</button>
+                <button class="btn add-to-cart">Add To Selection</button>
             </div>
             <div class="product-card">
                 <div class="product-card-content">
@@ -63,7 +63,7 @@
                     <p class="p">A solo tap dance performance for intermediate-level competitors.</p>
                     <p class="price">$55</p>
                 </div>
-                <button class="btn">Add To Selection</button>
+                <button class="btn add-to-cart">Add To Selection</button>
             </div>
             <div class="product-card">
                 <div class="product-card-content">
@@ -71,7 +71,7 @@
                     <p class="p">A solo tap dance performance for intermediate-level competitors.</p>
                     <p class="price">$55</p>
                 </div>
-                <button class="btn">Add To Selection</button>
+                <button class="btn add-to-cart">Add To Selection</button>
             </div>
             <div class="product-card">
                 <div class="product-card-content">
@@ -79,7 +79,7 @@
                     <p class="p">A solo tap dance performance for intermediate-level competitors.</p>
                     <p class="price">$55</p>
                 </div>
-                <button class="btn">Add To Selection</button>
+                <button class="btn add-to-cart">Add To Selection</button>
             </div>
             <div class="product-card">
                 <div class="product-card-content">
@@ -87,7 +87,7 @@
                     <p class="p">A solo tap dance performance for intermediate-level competitors.</p>
                     <p class="price">$55</p>
                 </div>
-                <button class="btn">Add To Selection</button>
+                <button class="btn add-to-cart">Add To Selection</button>
             </div>
             <div class="product-card">
                 <div class="product-card-content">
@@ -95,7 +95,7 @@
                     <p class="p">A solo tap dance performance for intermediate-level competitors.</p>
                     <p class="price">$55</p>
                 </div>
-                <button class="btn">Add To Selection</button>
+                <button class="btn add-to-cart">Add To Selection</button>
             </div>
             <div class="product-card">
                 <div class="product-card-content">
@@ -103,7 +103,7 @@
                     <p class="p">A solo tap dance performance for intermediate-level competitors.</p>
                     <p class="price">$55</p>
                 </div>
-                <button class="btn">Add To Selection</button>
+                <button class="btn add-to-cart">Add To Selection</button>
             </div>
             <div class="product-card">
                 <div class="product-card-content">
@@ -111,17 +111,39 @@
                     <p class="p">A solo tap dance performance for intermediate-level competitors.</p>
                     <p class="price">$55</p>
                 </div>
-                <button class="btn">Add To Selection</button>
+                <button class="btn add-to-cart">Add To Selection</button>
             </div>
         </div>
         </div>
       </div>
     </section>
 
+    <!-- CART DRAWER -->
+    <div class="cart-overlay"></div>
+    <div class="cart-drawer">
+        <div class="cart-header">
+            <h2>Items For [Contestant Name]</h2>
+            <button class="cart-close">&times;</button>
+        </div>
+
+        <div class="cart-items">
+            <!-- Items will be dynamically inserted here -->
+        </div>
+
+        <div class="cart-footer">
+            <button class="btn secondary cart">View Next Contestant <img src="/images/icons/caret-right.svg" alt="arrow right"></button>
+            <div class="cart-actions">
+                <button class="btn secondary">Back to Profile</button>
+                <button class="btn primary">Checkout Now</button>
+            </div>
+        </div>
+    </div>
+
     <!-- FOOTER -->
     <div id="footer-container"></div>
 
     <!-- SCRIPTS -->
     <script src="js/components.js"></script>
+    <script src="js/cart.js"></script>
   </body>
 </html>
