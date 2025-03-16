@@ -387,6 +387,33 @@ body {
     --font-size-xl: 2.4rem;
     --font-size-lg: 1.475rem;
   }
+
+  .header {
+    background-color: transparent;
+  }
+
+  .logo {
+    display: none;
+  }
+  .menu-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem; /* Adjust to left if preferred */
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-blue-dark);
+    color: var(--color-white-light);
+    font-size: 1.8rem;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
   .h1 {
     line-height: 1.2;
   }

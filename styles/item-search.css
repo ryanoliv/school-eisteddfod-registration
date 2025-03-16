@@ -12,6 +12,7 @@
 .item-search-section > .container {
   position: relative;
   z-index: 2;
+  min-height: 340px;
 }
 
 .item-search-section::before {
