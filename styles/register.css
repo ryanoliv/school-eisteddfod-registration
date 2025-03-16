@@ -126,7 +126,11 @@ input:checked + .slider:before {
   gap: var(--gap-sm);
 }
 
-.register-form-input-container > input {
+.register-form-input-container.hidden {
+  display: none;
+}
+
+.register-form-input-container input {
   border: 1px solid var(--color-gray-light);
   padding: 1rem;
   border-radius: 50px;
@@ -141,6 +145,52 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: column;
   gap: var(--gap-sm);
+}
+
+/* Wrapper to ensure consistent spacing */
+.phone-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Style the phone input */
+.phone-input {
+  width: 100%;
+  padding: 1rem 1rem 1rem 5rem !important;
+  /* border: 1px solid var(--color-gray-light) !important; */
+}
+
+/* Style the country select dropdown */
+.phone-input-wrapper select {
+  position: absolute;
+  left: 10px; /* Adjust for spacing */
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  font-size: var(--font-size-sm);
+  padding: 0 1.5rem 0 0;
+  height: 100%;
+  outline: none;
+  cursor: pointer;
+
+  /* Add custom dropdown arrow */
+  background-image: url("/images/icons/caret-down.svg"); /* Replace with your actual path */
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px;
+}
+
+/* Hide default arrow for select */
+.phone-input-wrapper select::-ms-expand {
+  display: none;
+}
+.phone-input-wrapper select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .btn.secondary.google {

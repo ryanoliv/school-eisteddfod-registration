@@ -86,7 +86,7 @@ body {
   text-transform: uppercase;
   transition: all 0.3s ease;
   cursor: pointer;
-  text-wrap-mode: nowrap;
+  text-wrap: nowrap;
 }
 
 .btn.primary {
