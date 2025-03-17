@@ -27,6 +27,7 @@
   width: 100%;
   min-width: 500px;
   max-width: 750px;
+  padding-bottom: 2rem;
 }
 
 .step {
@@ -312,7 +313,7 @@
   .progress-container {
     min-width: unset;
     gap: 0;
-    /* padding: 1rem; */
+    /* padding: 0.5rem; */
   }
 
   .profile-container {
@@ -340,11 +341,9 @@
 }
 
 @media (max-width: 450px) {
-  /* .progress-container {
-    flex-direction: column;
-    gap: var(--gap-base);
-  } */
-
+  .profile-form-container {
+    width: 100%;
+  }
   .profile-form-row {
     gap: var(--gap-sm);
   }

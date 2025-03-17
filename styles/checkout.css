@@ -74,6 +74,9 @@
 }
 
 .order-item-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-sm);
   flex: 1;
 }
 
@@ -110,22 +113,10 @@ hr {
   margin: 1rem 0;
 }
 
-.btn.primary {
-  display: block;
-  width: 100%;
-  padding: 1rem;
-  border-radius: 50px;
-  background-color: var(--color-white-light);
-  color: var(--color-blue-dark);
-  text-align: center;
-  font-weight: bold;
-  cursor: pointer;
-}
-
 .payment-note {
-  font-size: 0.8rem;
-  opacity: 0.8;
-  margin-top: 1rem;
+  font-size: var(--font-size-xs);
+  opacity: 0.7;
+  margin-top: 2rem;
 }
 
 .order-summary-container {
@@ -139,7 +130,6 @@ hr {
   border-bottom-left-radius: var(--border-radius-base);
 }
 
-/* Title Styling */
 .order-summary-container h2 {
   font-size: var(--font-size-lg);
   font-weight: 700;
@@ -159,10 +149,6 @@ hr {
   height: 50px;
   background-color: var(--color-gray-light);
   border-radius: var(--border-radius-sm);
-}
-
-.order-item-details {
-  flex: 1;
 }
 
 .entry-title {
@@ -205,37 +191,19 @@ hr {
   font-weight: bold;
 }
 
-/* Terms & Agreement */
 .terms-container {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  margin: 1.5rem 0;
+  margin: 2rem 0;
+}
+
+.terms-container > label {
+  font-size: var(--font-size-xs);
 }
 
 .terms-container input {
   transform: scale(1.2);
-}
-
-/* Payment Button */
-.btn.primary {
-  display: block;
-  width: 100%;
-  padding: 1rem;
-  border-radius: 50px;
-  background-color: var(--color-white-light);
-  color: var(--color-blue-dark);
-  text-align: center;
-  font-weight: bold;
-  cursor: pointer;
-  margin-top: 1rem;
-}
-
-/* Payment Note */
-.payment-note {
-  font-size: 0.8rem;
-  opacity: 0.8;
-  margin-top: 1rem;
 }
 
 @media (max-width: 1180px) {

@@ -136,6 +136,10 @@
 }
 
 @media (max-width: 550px) {
+  .select-items-section {
+    padding-top: 0;
+  }
+
   .select-items-profile-summary-card {
     flex-direction: column;
   }
