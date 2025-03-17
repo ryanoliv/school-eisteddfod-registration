@@ -118,6 +118,9 @@
 }
 
 @media (max-width: 650px) {
+  .verify-section {
+    padding-top: 0;
+  }
   .verify-form-container {
     padding: 3rem 2rem;
     width: 100%;
