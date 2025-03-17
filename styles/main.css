@@ -420,7 +420,7 @@ body {
 
 @media (max-width: 550px) {
   :root {
-    --font-size-xl: 2.4rem;
+    --font-size-xl: 2.3rem;
     --font-size-lg: 1.475rem;
   }
   .nav {
