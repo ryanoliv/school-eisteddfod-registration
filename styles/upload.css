@@ -129,8 +129,8 @@
 
 .modal {
   background: var(--color-white-light);
-  padding: 4rem 2rem;
-  max-width: 550px;
+  padding: 4rem;
+  max-width: 500px;
   border-radius: var(--border-radius-base);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   position: relative;
@@ -201,6 +201,7 @@
   padding: 1rem;
 
   width: 180px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contestant-select {
@@ -296,9 +297,73 @@
   padding-block: 2rem;
   width: 100%;
   border: 1px solid var(--color-gray-dark);
-  background-color: var(--color-gray-light);
+  background-color: var(--color-gray-lightest);
   border-radius: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.uploading-container {
+  background-color: var(--color-gray-lightest);
+  border: 1px solid var(--color-gray-dark);
+  width: 100%;
+  padding: 2rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-lg);
+  align-items: center;
+  text-align: center;
+  width: 100%;
+
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.uploading-container p {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.uploading-progress-bar {
+  width: 400px;
+  height: 10px;
+  background-color: var(--color-gray-dark);
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+}
+
+.uploading-progress-bar::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 40%; /* Adjust this dynamically with JS */
+  background-color: var(--color-blue-dark);
+  border-radius: 6px;
+}
+
+.uploading-actions {
+  display: flex;
+  justify-content: center;
+  gap: var(--gap-lg);
+}
+
+.uploading-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* cursor: pointer; */
+}
+
+.uploading-action img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.uploading-action p {
+  font-size: 14px;
+  margin-top: 5px;
 }
