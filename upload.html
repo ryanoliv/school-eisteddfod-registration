@@ -18,7 +18,7 @@
     <!-- HEADER -->
     <!-- <div id="header-container"></div> -->
 
-    <section>
+    <section class="upload-section">
       <div class="container">
         <div class="upload-header-container">
           <div class="upload-year-selection-container">
@@ -59,7 +59,59 @@
             </div>
           </div>
         </div>
+        <div class="upload-main-container">
+          <div class="upload-main-header">
+            <!-- Contestant Selection -->
+            <div class="contestant-selection-container">
+              <div class="contestant-dropdown">
+                <select id="contestant-select" class="contestant-select">
+                  <option value="" disabled selected>Select Contestant</option>
+                  <option value="contestant1">John Doe</option>
+                  <option value="contestant2">
+                    Jane Alexandra Smith-Williams
+                  </option>
+                  <option value="contestant3">
+                    Michael Robert Christopher Jonathan
+                  </option>
+                </select>
+                <img
+                  src="/images/icons/caret-down.svg"
+                  alt="dropdown arrow"
+                  class="dropdown-icon"
+                />
+              </div>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="upload-search-container">
+              <div class="search-wrapper">
+                <input
+                  type="text"
+                  id="search-bar"
+                  class="search-bar"
+                  placeholder="Search by code or participant"
+                />
+                <button type="submit" class="search-btn">Search</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="upload-main-table-content">
+            <!-- DEFAULT PAGE STATE -->
+            <div class="no-entries">
+              <p>There are no current entries to display.</p>
+            </div>
+            <div class="no-entries-register">
+              <p>
+                You have not entered any items for Concours D'Arts yet - to
+                enter please click
+                <a href="/register.html" class="link">here</a>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
+
       <!-- GLOBAL MODAL -->
       <div class="modal-overlay hidden" id="globalModal">
         <!-- HOW IT WORKS CONTENT -->
