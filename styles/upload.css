@@ -1,0 +1,172 @@
+.upload-header-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: flex-end;
+}
+
+.upload-year-selection-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-sm);
+}
+
+.year-dropdown {
+  position: relative;
+  display: flex;
+  gap: var(--gap-sm);
+  border: 1px solid var(--color-gray-light);
+  border-radius: 6px;
+}
+
+.year-dropdown > select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--color-gray-base);
+  background-color: transparent;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.dropdown-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  pointer-events: none;
+}
+
+.upload-header-container-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-md);
+}
+
+.upload-header-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-sm);
+}
+
+.upload-header-title-container > h2 {
+  font-size: var(--font-size-md);
+}
+
+.upload-header-container-inner > p {
+  font-size: var(--font-size-sm);
+  font-style: italic;
+  color: var(--color-gray-dark);
+}
+
+.tooltip-wrapper {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.how-it-works-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 2px solid var(--color-blue-dark);
+  font-weight: 800;
+  border-radius: 50%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.tooltip-text {
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  background-color: var(--color-white-light);
+  border: 1px solid var(--color-gray-light);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.tooltip-wrapper:hover .tooltip-text {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 500;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.modal {
+  background: var(--color-white-light);
+  padding: 4rem 2rem;
+  max-width: 550px;
+  border-radius: var(--border-radius-base);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.95);
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+  z-index: 501;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-base);
+  align-items: center;
+}
+
+.modal-content > ul {
+  list-style: decimal;
+}
+
+.modal-overlay.active,
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+/* Modal Close Button */
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  max-width: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: var(--color-gray-dark);
+}
+
+.modal-close:hover {
+  color: var(--color-red);
+}
