@@ -1,3 +1,7 @@
+.upload-section {
+  padding-top: var(--header-height);
+}
+
 .upload-section > .container {
   display: flex;
   flex-direction: column;
@@ -594,4 +598,36 @@
   align-items: center;
   margin-top: 1rem;
   font-size: var(--font-size-sm);
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-md);
+  margin-top: 2rem;
+}
+
+.page-btn {
+  background-color: transparent;
+  border: 1px solid var(--color-blue-dark);
+  color: var(--color-blue-dark);
+  font-size: var(--font-size-xs);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.page-btn.active,
+.page-btn:hover {
+  background-color: var(--color-blue-dark);
+  color: var(--color-white-light);
+}
+
+.dots {
+  color: var(--color-gray-dark);
+  font-weight: bold;
 }
