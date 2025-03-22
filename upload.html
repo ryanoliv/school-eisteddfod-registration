@@ -53,7 +53,7 @@
             <a href="" class="btn secondary">View Gallery</a>
           </div>
           <div class="upload-how-it-works-container">
-            <div class="tooltip-wrapper">
+            <div class="tooltip-wrapper" data-modal-trigger="how-it-works">
               <p class="how-it-works-icon">?</p>
               <span class="tooltip-text">Need help? Click here.</span>
             </div>
@@ -150,7 +150,7 @@
                 </div>
                 <!-- MAIN ENTRY DROPDOWN -->
                 <div class="upload-entry-main-files">
-                  <div class="main-files-title-container" id="mainFilesToggle">
+                  <div class="main-files-title-container main-files-toggle">
                     <div class="main-files-title">
                       <p>Main Entry Files</p>
                       <img
@@ -213,8 +213,7 @@
                 <!-- SUPPORTING FILES DROPDOWN -->
                 <div class="upload-entry-supporting-files">
                   <div
-                    class="supporting-files-title-container"
-                    id="supportingFilesToggle"
+                    class="supporting-files-title-container supporting-files-toggle"
                   >
                     <div class="supporting-files-title">
                       <p>Supporting Files</p>
@@ -228,10 +227,7 @@
                       material.
                     </p>
                   </div>
-                  <div
-                    class="supporting-files-content dropdown-collapsible"
-                    id="supporting-files-content"
-                  >
+                  <div class="supporting-files-content dropdown-collapsible">
                     <div class="table-container">
                       <table class="entry-files-table">
                         <tr>
@@ -293,7 +289,12 @@
 
                 <!-- CTA BUTTONS -->
                 <div class="entry-cta-container">
-                  <button class="btn primary border">Withdraw Entry</button>
+                  <button
+                    class="btn primary border"
+                    data-modal-trigger="withdraw-entry"
+                  >
+                    Withdraw Entry
+                  </button>
                   <button class="btn">Submit Entry</button>
                 </div>
 
@@ -308,6 +309,343 @@
                   </div>
                 </div>
               </div>
+
+              <!-- SINGLE ENTRY CONTAINER -->
+              <div class="upload-entry-container">
+                <div class="upload-entry-header">
+                  <p>
+                    Entry Title: E11 - Monologue: Shakespeare | Due: 24 July
+                    2024
+                  </p>
+                </div>
+                <!-- MAIN ENTRY DROPDOWN -->
+                <div class="upload-entry-main-files">
+                  <div class="main-files-title-container main-files-toggle">
+                    <div class="main-files-title">
+                      <p>Main Entry Files</p>
+                      <img
+                        src="/images/icons/caret-down.svg"
+                        alt="drop down arrow"
+                      />
+                    </div>
+                    <p>Video performance or images of artwork.</p>
+                  </div>
+                  <div
+                    class="main-files-content dropdown-collapsible"
+                    id="main-files-content"
+                  >
+                    <div class="table-container">
+                      <table class="entry-files-table">
+                        <tr>
+                          <th>Filename</th>
+                          <th>File Type</th>
+                          <th>Status</th>
+                          <th>Actions</th>
+                        </tr>
+                        <tr>
+                          <td>XYZ.mp4</td>
+                          <td>MP4 - Video</td>
+                          <td class="status-container">
+                            <img
+                              src="/images/icons/complete.svg"
+                              alt="checkmark"
+                            />Upload Complete
+                          </td>
+                          <td><a href="#">View</a> | <a href="#">Delete</a></td>
+                        </tr>
+                        <tr>
+                          <td>XYZ.mp4</td>
+                          <td>MP4 - Video</td>
+                          <td class="status-container">
+                            <img
+                              src="/images/icons/complete.svg"
+                              alt="checkmark"
+                            />Upload Complete
+                          </td>
+                          <td><a href="#">View</a> | <a href="#">Delete</a></td>
+                        </tr>
+                        <tr>
+                          <td>XYZ.mp4</td>
+                          <td>MP4 - Video</td>
+                          <td class="status-container">
+                            <img
+                              src="/images/icons/complete.svg"
+                              alt="checkmark"
+                            />Upload Complete
+                          </td>
+                          <td><a href="#">View</a> | <a href="#">Delete</a></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- SUPPORTING FILES DROPDOWN -->
+                <div class="upload-entry-supporting-files">
+                  <div
+                    class="supporting-files-title-container supporting-files-toggle"
+                  >
+                    <div class="supporting-files-title">
+                      <p>Supporting Files</p>
+                      <img
+                        src="/images/icons/caret-down.svg"
+                        alt="drop down arrow"
+                      />
+                    </div>
+                    <p>
+                      Additional files such as sheet music or own choice
+                      material.
+                    </p>
+                  </div>
+                  <div class="supporting-files-content dropdown-collapsible">
+                    <div class="table-container">
+                      <table class="entry-files-table">
+                        <tr>
+                          <th>Filename</th>
+                          <th>File Type</th>
+                          <th>Status</th>
+                          <th>Actions</th>
+                        </tr>
+                        <tr>
+                          <td>XYZ.pdf</td>
+                          <td>PDF - Sheet Music</td>
+                          <td class="status-container">
+                            <img
+                              src="/images/icons/complete.svg"
+                              alt="checkmark"
+                            />Upload Complete
+                          </td>
+                          <td><a href="#">View</a> | <a href="#">Delete</a></td>
+                        </tr>
+                        <tr>
+                          <td>XYZ.pdf</td>
+                          <td>PDF - Sheet Music</td>
+                          <td class="status-container">
+                            <img
+                              src="/images/icons/complete.svg"
+                              alt="checkmark"
+                            />Upload Complete
+                          </td>
+                          <td><a href="#">View</a> | <a href="#">Delete</a></td>
+                        </tr>
+                        <tr>
+                          <td>XYZ.pdf</td>
+                          <td>PDF - Sheet Music</td>
+                          <td class="status-container">
+                            <img
+                              src="/images/icons/complete.svg"
+                              alt="checkmark"
+                            />Upload Complete
+                          </td>
+                          <td><a href="#">View</a> | <a href="#">Delete</a></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- UPLOAD CONTAINER-->
+                <!-- <div class="entry-upload-files-container">
+                  <div class="uploading-container">
+                    <div class="uploading-title-container">
+                      <img src="/images/icons/upload.svg" alt="upload icon" />
+                      <p>Upload or Drop Files</p>
+                    </div>
+                    <p class="upload-file-support">
+                      Supported file formats: MP4, MOV | Max file size: 500MB
+                    </p>
+                  </div>
+                </div> -->
+
+                <!-- CTA BUTTONS -->
+                <!-- <div class="entry-cta-container">
+                  <button
+                    class="btn primary border"
+                    data-modal-trigger="withdraw-entry"
+                  >
+                    Withdraw Entry
+                  </button>
+                  <button class="btn">Submit Entry</button>
+                </div> -->
+
+                <!-- GLOBAL ENTRY STATUS -->
+                <div class="entry-global-status">
+                  <div class="entry-global-status-inner">
+                    <img
+                      src="/images/icons/entry-complete.svg"
+                      alt="complete"
+                    />
+                    <p class="status-icon">Entry Complete</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SINGLE ENTRY CONTAINER -->
+              <div class="upload-entry-container">
+                <div class="upload-entry-header">
+                  <p>
+                    Entry Title: E11 - Monologue: Shakespeare | Due: 24 July
+                    2024
+                  </p>
+                </div>
+                <!-- MAIN ENTRY DROPDOWN -->
+                <div class="upload-entry-main-files">
+                  <div class="main-files-title-container main-files-toggle">
+                    <div class="main-files-title">
+                      <p>Main Entry Files</p>
+                      <img
+                        src="/images/icons/caret-down.svg"
+                        alt="drop down arrow"
+                      />
+                    </div>
+                    <p>Video performance or images of artwork.</p>
+                  </div>
+                  <div
+                    class="main-files-content dropdown-collapsible"
+                    id="main-files-content"
+                  >
+                    <div class="table-container">
+                      <table class="entry-files-table">
+                        <tr>
+                          <th>Filename</th>
+                          <th>File Type</th>
+                          <th>Status</th>
+                          <th>Actions</th>
+                        </tr>
+                        <tr>
+                          <td>XYZ.mp4</td>
+                          <td>MP4 - Video</td>
+                          <td class="status-container">
+                            <img
+                              src="/images/icons/complete.svg"
+                              alt="checkmark"
+                            />Upload Complete
+                          </td>
+                          <td><a href="#">View</a> | <a href="#">Delete</a></td>
+                        </tr>
+                        <tr>
+                          <td>XYZ.mp4</td>
+                          <td>MP4 - Video</td>
+                          <td class="status-container">
+                            <img
+                              src="/images/icons/in-progress.svg"
+                              alt="checkmark"
+                            />In Progress
+                          </td>
+                          <td><a href="#">View</a> | <a href="#">Delete</a></td>
+                        </tr>
+                        <tr>
+                          <td>XYZ.mp4</td>
+                          <td>MP4 - Video</td>
+                          <td class="status-container">
+                            <img
+                              src="/images/icons/error.svg"
+                              alt="error"
+                            />Error | <button class="retry-btn">Retry?</button>
+                          </td>
+                          <td><a href="#">View</a> | <a href="#">Delete</a></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- SUPPORTING FILES DROPDOWN -->
+                <div class="upload-entry-supporting-files">
+                  <div
+                    class="supporting-files-title-container supporting-files-toggle"
+                  >
+                    <div class="supporting-files-title">
+                      <p>Supporting Files</p>
+                      <img
+                        src="/images/icons/caret-down.svg"
+                        alt="drop down arrow"
+                      />
+                    </div>
+                    <p>
+                      Additional files such as sheet music or own choice
+                      material.
+                    </p>
+                  </div>
+                  <div class="supporting-files-content dropdown-collapsible">
+                    <div class="table-container">
+                      <table class="entry-files-table">
+                        <tr>
+                          <th>Filename</th>
+                          <th>File Type</th>
+                          <th>Status</th>
+                          <th>Actions</th>
+                        </tr>
+                        <tr>
+                          <td>XYZ.pdf</td>
+                          <td>PDF - Sheet Music</td>
+                          <td class="status-container">
+                            <img
+                              src="/images/icons/complete.svg"
+                              alt="checkmark"
+                            />Upload Complete
+                          </td>
+                          <td><a href="#">View</a> | <a href="#">Delete</a></td>
+                        </tr>
+                        <tr>
+                          <td>XYZ.pdf</td>
+                          <td>PDF - Sheet Music</td>
+                          <td class="status-container">
+                            <img
+                              src="/images/icons/complete.svg"
+                              alt="checkmark"
+                            />Upload Complete
+                          </td>
+                          <td><a href="#">View</a> | <a href="#">Delete</a></td>
+                        </tr>
+                        <tr>
+                          <td>XYZ.pdf</td>
+                          <td>PDF - Sheet Music</td>
+                          <td class="status-container">
+                            <img
+                              src="/images/icons/complete.svg"
+                              alt="checkmark"
+                            />Upload Complete
+                          </td>
+                          <td><a href="#">View</a> | <a href="#">Delete</a></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- UPLOAD CONTAINER-->
+                <!-- <div class="entry-upload-files-container">
+                  <div class="uploading-container">
+                    <div class="uploading-title-container">
+                      <img src="/images/icons/upload.svg" alt="upload icon" />
+                      <p>Upload or Drop Files</p>
+                    </div>
+                    <p class="upload-file-support">
+                      Supported file formats: MP4, MOV | Max file size: 500MB
+                    </p>
+                  </div>
+                </div> -->
+
+                <!-- CTA BUTTONS -->
+                <!-- <div class="entry-cta-container">
+                  <button
+                    class="btn primary border"
+                    data-modal-trigger="withdraw-entry"
+                  >
+                    Withdraw Entry
+                  </button>
+                  <button class="btn">Submit Entry</button>
+                </div> -->
+
+                <!-- GLOBAL ENTRY STATUS -->
+                <div class="entry-global-status">
+                  <div class="entry-global-status-inner">
+                    <img src="/images/icons/entry-expired.svg" alt="enpired" />
+                    <p class="status-icon">Deadline Passed</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -315,14 +653,13 @@
 
       <!-- GLOBAL MODAL -->
       <div class="modal-overlay hidden" id="globalModal">
-        <!-- HOW IT WORKS CONTENT -->
-        <div class="modal hidden" id="howItWorksModal">
-          <div class="modal-content">
+        <div class="modal" data-modal-container>
+          <!-- HOW IT WORKS CONTENT -->
+          <div class="modal-content hidden" data-modal="how-it-works">
             <img
               src="/images/icons/close.svg"
               alt="close icon"
               class="modal-close"
-              id="modalClose"
             />
             <img
               src="/images/icons/question.svg"
@@ -348,6 +685,93 @@
               Need help? Check our <a href="" class="link">FAQ Guide</a> for
               upload instructions and file requirements.
             </p>
+          </div>
+
+          <!-- FILE TOO LARGE CONTENT -->
+          <div class="modal-content hidden" data-modal="file-too-large">
+            <img
+              src="/images/icons/close.svg"
+              alt="close icon"
+              class="modal-close"
+            />
+            <img
+              src="/images/icons/warning.svg"
+              alt="warning mark"
+              class="modal-icon"
+            />
+            <h2 class="h2">File Too Large</h2>
+            <p>
+              The selected file exceeds the maximum allowed size. Please choose
+              a smaller file.
+            </p>
+            <div class="modal-actions">
+              <div class="modal-action">
+                <img src="/images/icons/restart.svg" alt="retry icon" />
+                <p>Select Another File</p>
+              </div>
+              <div class="modal-action">
+                <img
+                  src="/images/icons/remove-from-cart.svg"
+                  alt="delete icon"
+                />
+                <p>Delete Upload</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- UNSUPPORTED FORMAT CONTENT -->
+          <div class="modal-content hidden" data-modal="unsupported-format">
+            <img
+              src="/images/icons/close.svg"
+              alt="close icon"
+              class="modal-close"
+            />
+            <img
+              src="/images/icons/warning.svg"
+              alt="warning mark"
+              class="modal-icon"
+            />
+            <h2 class="h2">Unsupported Format</h2>
+            <p>
+              This file format is not supported. Check our
+              <a href="#" class="link">FAQ Guide</a> for file requirements.
+            </p>
+            <div class="modal-actions">
+              <div class="modal-action">
+                <img src="/images/icons/restart.svg" alt="retry icon" />
+                <p>Select Another File</p>
+              </div>
+              <div class="modal-action">
+                <img
+                  src="/images/icons/remove-from-cart.svg"
+                  alt="delete icon"
+                />
+                <p>Delete Upload</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- WITHDRAW ENTRY CONTENT -->
+          <div class="modal-content hidden" data-modal="withdraw-entry">
+            <img
+              src="/images/icons/close.svg"
+              alt="close icon"
+              class="modal-close"
+            />
+            <img
+              src="/images/icons/no-entry.svg"
+              alt="no entry icon"
+              class="modal-icon"
+            />
+            <h2 class="h2">Withdraw Entry</h2>
+            <p>
+              Are you sure you want to withdraw from this entry? This action
+              cannot be undone.
+            </p>
+            <div class="modal-actions">
+              <button class="btn">Cancel</button>
+              <button class="btn destructive">Withdraw Entry</button>
+            </div>
           </div>
         </div>
       </div>
