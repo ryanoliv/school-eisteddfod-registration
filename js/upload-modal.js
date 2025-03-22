@@ -7,11 +7,13 @@ document.addEventListener("DOMContentLoaded", function () {
   function openModal() {
     modal.classList.add("active");
     overlay.classList.add("active");
+    modal.classList.remove("hidden");
   }
 
   function closeModal() {
     modal.classList.remove("active");
     overlay.classList.remove("active");
+    modal.classList.add("hidden");
   }
 
   // Open modal on click

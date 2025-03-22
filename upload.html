@@ -16,7 +16,7 @@
   </head>
   <body>
     <!-- HEADER -->
-    <!-- <div id="header-container"></div> -->
+    <div id="header-container"></div>
 
     <section class="upload-section">
       <div class="container">
@@ -62,23 +62,30 @@
         <div class="upload-main-container">
           <div class="upload-main-header">
             <!-- Contestant Selection -->
-            <div class="contestant-selection-container">
-              <div class="contestant-dropdown">
-                <select id="contestant-select" class="contestant-select">
-                  <option value="" disabled selected>Select Contestant</option>
-                  <option value="contestant1">John Doe</option>
-                  <option value="contestant2">
-                    Jane Alexandra Smith-Williams
-                  </option>
-                  <option value="contestant3">
-                    Michael Robert Christopher Jonathan
-                  </option>
-                </select>
-                <img
-                  src="/images/icons/caret-down.svg"
-                  alt="dropdown arrow"
-                  class="dropdown-icon"
-                />
+            <div class="contestant-total-items-container">
+              <div class="contestant-selection-container">
+                <div class="contestant-dropdown">
+                  <select id="contestant-select" class="contestant-select">
+                    <option value="" disabled selected>
+                      Select Contestant
+                    </option>
+                    <option value="contestant1">John Doe</option>
+                    <option value="contestant2">
+                      Jane Alexandra Smith-Williams
+                    </option>
+                    <option value="contestant3">
+                      Michael Robert Christopher Jonathan
+                    </option>
+                  </select>
+                  <img
+                    src="/images/icons/caret-down.svg"
+                    alt="dropdown arrow"
+                    class="dropdown-icon"
+                  />
+                </div>
+              </div>
+              <div class="total-items-container">
+                <p>Total Items: 3 (1 of 3 complete)</p>
               </div>
             </div>
 
@@ -128,6 +135,180 @@
                 </div>
               </div>
             </div>
+
+            <!-- ENTRIES -->
+            <div class="upload-entries-container">
+              <h2 class="h2">Entries List</h2>
+
+              <!-- SINGLE ENTRY CONTAINER -->
+              <div class="upload-entry-container">
+                <div class="upload-entry-header">
+                  <p>
+                    Entry Title: E11 - Monologue: Shakespeare | Due: 24 July
+                    2024
+                  </p>
+                </div>
+                <!-- MAIN ENTRY DROPDOWN -->
+                <div class="upload-entry-main-files">
+                  <div class="main-files-title-container" id="mainFilesToggle">
+                    <div class="main-files-title">
+                      <p>Main Entry Files</p>
+                      <img
+                        src="/images/icons/caret-down.svg"
+                        alt="drop down arrow"
+                      />
+                    </div>
+                    <p>Video performance or images of artwork.</p>
+                  </div>
+                  <div
+                    class="main-files-content dropdown-collapsible"
+                    id="main-files-content"
+                  >
+                    <div class="table-container">
+                      <table class="entry-files-table">
+                        <tr>
+                          <th>Filename</th>
+                          <th>File Type</th>
+                          <th>Status</th>
+                          <th>Actions</th>
+                        </tr>
+                        <tr>
+                          <td>XYZ.mp4</td>
+                          <td>MP4 - Video</td>
+                          <td class="status-container">
+                            <img
+                              src="/images/icons/complete.svg"
+                              alt="checkmark"
+                            />Upload Complete
+                          </td>
+                          <td><a href="#">View</a> | <a href="#">Delete</a></td>
+                        </tr>
+                        <tr>
+                          <td>XYZ.mp4</td>
+                          <td>MP4 - Video</td>
+                          <td class="status-container">
+                            <img
+                              src="/images/icons/in-progress.svg"
+                              alt="checkmark"
+                            />In Progress
+                          </td>
+                          <td><a href="#">View</a> | <a href="#">Delete</a></td>
+                        </tr>
+                        <tr>
+                          <td>XYZ.mp4</td>
+                          <td>MP4 - Video</td>
+                          <td class="status-container">
+                            <img
+                              src="/images/icons/error.svg"
+                              alt="error"
+                            />Error | <button class="retry-btn">Retry?</button>
+                          </td>
+                          <td><a href="#">View</a> | <a href="#">Delete</a></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- SUPPORTING FILES DROPDOWN -->
+                <div class="upload-entry-supporting-files">
+                  <div
+                    class="supporting-files-title-container"
+                    id="supportingFilesToggle"
+                  >
+                    <div class="supporting-files-title">
+                      <p>Supporting Files</p>
+                      <img
+                        src="/images/icons/caret-down.svg"
+                        alt="drop down arrow"
+                      />
+                    </div>
+                    <p>
+                      Additional files such as sheet music or own choice
+                      material.
+                    </p>
+                  </div>
+                  <div
+                    class="supporting-files-content dropdown-collapsible"
+                    id="supporting-files-content"
+                  >
+                    <div class="table-container">
+                      <table class="entry-files-table">
+                        <tr>
+                          <th>Filename</th>
+                          <th>File Type</th>
+                          <th>Status</th>
+                          <th>Actions</th>
+                        </tr>
+                        <tr>
+                          <td>XYZ.pdf</td>
+                          <td>PDF - Sheet Music</td>
+                          <td class="status-container">
+                            <img
+                              src="/images/icons/complete.svg"
+                              alt="checkmark"
+                            />Upload Complete
+                          </td>
+                          <td><a href="#">View</a> | <a href="#">Delete</a></td>
+                        </tr>
+                        <tr>
+                          <td>XYZ.pdf</td>
+                          <td>PDF - Sheet Music</td>
+                          <td class="status-container">
+                            <img
+                              src="/images/icons/complete.svg"
+                              alt="checkmark"
+                            />Upload Complete
+                          </td>
+                          <td><a href="#">View</a> | <a href="#">Delete</a></td>
+                        </tr>
+                        <tr>
+                          <td>XYZ.pdf</td>
+                          <td>PDF - Sheet Music</td>
+                          <td class="status-container">
+                            <img
+                              src="/images/icons/complete.svg"
+                              alt="checkmark"
+                            />Upload Complete
+                          </td>
+                          <td><a href="#">View</a> | <a href="#">Delete</a></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- UPLOAD CONTAINER-->
+                <div class="entry-upload-files-container">
+                  <div class="uploading-container">
+                    <div class="uploading-title-container">
+                      <img src="/images/icons/upload.svg" alt="upload icon" />
+                      <p>Upload or Drop Files</p>
+                    </div>
+                    <p class="upload-file-support">
+                      Supported file formats: MP4, MOV | Max file size: 500MB
+                    </p>
+                  </div>
+                </div>
+
+                <!-- CTA BUTTONS -->
+                <div class="entry-cta-container">
+                  <button class="btn primary border">Withdraw Entry</button>
+                  <button class="btn">Submit Entry</button>
+                </div>
+
+                <!-- GLOBAL ENTRY STATUS -->
+                <div class="entry-global-status">
+                  <div class="entry-global-status-inner">
+                    <img
+                      src="/images/icons/entry-incomplete.svg"
+                      alt="incomplete"
+                    />
+                    <p class="status-icon">Entry Incomplete</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -173,9 +354,11 @@
     </section>
 
     <!-- FOOTER -->
-    <!-- <div id="footer-container"></div> -->
+    <div id="footer-container"></div>
 
     <!-- SCRIPTS -->
+
+    <script src="js/entry-dropdown.js"></script>
     <script src="js/upload-modal.js"></script>
   </body>
 </html>
