@@ -569,6 +569,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  max-width: 400px;
 }
 
 .entry-files-table th:nth-child(2),
@@ -667,6 +668,10 @@
     align-items: flex-start;
     gap: var(--gap-lg);
   }
+
+  .entry-files-table td:nth-child(1) {
+    max-width: 200px;
+  }
 }
 
 @media (max-width: 685px) {
@@ -733,6 +738,10 @@
   .modal {
     max-width: 100%;
     padding: 4rem 2rem;
+  }
+
+  .entry-files-table td:nth-child(1) {
+    max-width: 80px;
   }
 }
 
